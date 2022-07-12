@@ -100,10 +100,13 @@ True or "42"
 # (for 5 days, they love it), and Hercules (1 day, you don't know yet if they're going to like it). 
 # If price for a movie per day is 3 dollars, how much will you have to pay?
 
-cost = 3
-days_rented = 9
-price_per_movie = days_rented * cost
-print(price_per_movie)
+cost_per_day = 3
+mermaid_days = 3
+bear_days = 5
+herc_days = 1
+days_rented = mermaid_days + bear_days + herc_days
+price = days_rented * cost_per_day
+print(price)
 
 # Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook, they 
 # pay you a different rate per hour. Google pays 400 dollars per hour, Amazon 380, and Facebook 350. 
@@ -113,7 +116,10 @@ print(price_per_movie)
 google_rate = 400
 amazon_rate = 380
 facebook_rate = 350
-payment = (facebook_rate * 10) + (google_rate * 6) + (amazon_rate * 4)
+fb_hours = 10
+goog_hours = 6
+amaz_hours = 4
+payment = (facebook_rate * fb_hours) + (google_rate * goog_hours) + (amazon_rate * amaz_hours)
 print(payment)
 
 # A student can be enrolled to a class only if the class is not full 
