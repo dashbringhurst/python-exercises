@@ -1,3 +1,101 @@
+# Identify the data type of the following values:
+
+# 99.9
+type(99.9)
+
+# "False"
+type("False")
+
+# False
+type(False)
+
+# '0'
+type('0')
+
+# 0
+type(0)
+
+# True
+type(True)
+
+# 'True'
+type('True')
+
+# [{}]
+type[{}]
+
+# {'a': []}
+type{'a': []}
+
+# For each of the following code blocks, read the expression and predict what the result of evaluating 
+# it would be, then execute the expression in your Python REPL.
+
+'1' + 2
+# returns error
+
+6 % 4
+# 2
+
+type(6 % 4)
+# int
+
+type(type(6 % 4))
+# type
+
+'3 + 4 is ' + 3 + 4
+# returns error; possible fix: f'3 + 4 is {3 + 4}'
+
+0 < 0
+# False
+
+'False' == False
+# False
+
+True == 'True'
+# False 
+
+5 >= -5
+# True
+
+True or "42"
+# True
+
+6 % 5
+# 1
+
+5 < 4 and 1 == 1
+# False
+
+'codeup' == 'codeup' and 'codeup' == 'Codeup'
+# False
+
+4 >= 0 and 1 !== '1'
+# invalid syntax
+
+6 % 3 == 0
+# True
+
+5 % 2 != 0
+# True
+
+[1] + 2
+# returns error
+
+[1] + [2]
+# [1, 2]
+
+[1] * 2
+# [1, 1]
+
+[1] * [2]
+# returns error
+
+[] + [] == []
+# True
+
+{} + {}
+# returns error
+
 # You have rented some movies for your kids: The little mermaid (for 3 days), Brother Bear 
 # (for 5 days, they love it), and Hercules (1 day, you don't know yet if they're going to like it). 
 # If price for a movie per day is 3 dollars, how much will you have to pay?
