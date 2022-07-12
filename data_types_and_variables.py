@@ -154,17 +154,23 @@ password = 'notastrongpassword'
 # Create a variable that holds a boolean value for each of the following conditions:
 # the password must be at least 5 characters
 
-(len)username >= 5
+at_least_five = len(username) >= 5
 
 # the username must be no more than 20 characters
 
-(len)username <= 20
+no_more_than_twenty = len(username) <= 20
 
 # the password must not be the same as the username
 
-username != password
+name_and_pass = username != password
 
 # bonus neither the username or password can start or end with whitespace
 
-username[0] != ' ' and username[-1] != ' '
+good_username = username == username.strip()
+good_pw = password == password.strip()
+
+valid_name_and_pw = at_least_five and no_more_than_twenty and name_and_pass\
+    and good_username and good_pw
+
+
 
