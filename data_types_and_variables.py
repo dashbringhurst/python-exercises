@@ -42,5 +42,5 @@ password = 'notastrongpassword'
 # the password must not be the same as the username
 username != password
 # bonus neither the username or password can start or end with whitespace
-
+username[0] != ' ' and username[-1] != ' '
 
