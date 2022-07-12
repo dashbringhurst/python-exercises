@@ -28,7 +28,19 @@ print(can_enroll)
 
 
 # A product offer can be applied only if people buys more than 2 items, and the offer has not expired. 
+
+offer_expired = False
+enough_items = True
+product_offer = enough_items and not offer_expired
+print(product_offer)
+
 # Premium members do not need to buy a specific amount of products.
+
+offer_expired = False
+enough_items = False
+premium_member = True
+product_offer = (enough_items or premium_member) and not offer_expired
+print(product_offer)
 
 # Continue working in your data_types_and_variables.py file. 
 # Use the following code to follow the instructions below:
