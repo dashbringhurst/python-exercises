@@ -46,13 +46,21 @@ print(product_offer)
 # Use the following code to follow the instructions below:
 username = 'codeup'
 password = 'notastrongpassword'
+
 # Create a variable that holds a boolean value for each of the following conditions:
 # the password must be at least 5 characters
+
 (len)username >= 5
+
 # the username must be no more than 20 characters
+
 (len)username <= 20
+
 # the password must not be the same as the username
+
 username != password
+
 # bonus neither the username or password can start or end with whitespace
+
 username[0] != ' ' and username[-1] != ' '
 
